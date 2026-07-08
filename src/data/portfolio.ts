@@ -46,7 +46,7 @@ export interface Skill {
 export const personalInfo = {
   name: "ISHEMA M. HUGUES",
   shortName: "HUGUES",
-  title: "Frontend Developer & UI Designer",
+  title: "Product Designer & Mobile Developer",
   location: "Kigali, Rwanda",
   phone: "+250 789 175 211",
   email: "huguesishema@gmail.com",
@@ -58,7 +58,7 @@ export const personalInfo = {
   /** Portrait for ASCII render — place at public/images/about/profile.png */
   profileImage: "/images/about/profile.png",
   summary:
-    "With four years of experience in frontend development, graphic design and UX/UI design, I specialize in crafting creative, user-friendly interfaces using ReactJS, TypeScript, NextJS, Flutter, and more. Passionate about blending design and technology, I bring innovation and creativity to every product, ensuring visually engaging and intuitive digital experiences.",
+    "I am a Product Designer and Mobile & Web Developer who bridges the gap between creative strategy and clean mobile and web engineering. My first priority is always the user experience—focusing deeply on mapping out intuitive digital journeys, interactive wireframes, and user-centric systems. Once that core foundation is built, I use my development skills in React Native, Flutter, and TypeScript to translate those exact interfaces into pixel-perfect, high-performance cross-platform applications.",
   educationCurrent:
     "At ALU, I am turning technical theory into real-world impact. I combine software engineering and system design with the ethical integration of AI, aiming to build efficient technology that truly empowers users.",
 };
@@ -118,6 +118,17 @@ export const services: Service[] = [
 ];
 
 export const experiences: Experience[] = [
+  {
+    id: "idservice-mobile",
+    company: "ID Service Ltd",
+    role: "Mobile App Dev & Product Designer",
+    period: "Nov 2025 — June 2026",
+    type: "Contract",
+    description: [
+      "Simultaneously designed, developed, and managed 3 major mobile applications (Bill Me, Gastation, and ADMS), driving them completely from wireframes to formal execution",
+      "Successfully cleared strict App Store review guidelines, resulting in all 3 applications achieving fully approved, production-ready status in Apple App Store Connect",
+    ],
+  },
   {
     id: "loxotech",
     company: "Rwanda Development Board — Loxotech",
@@ -387,9 +398,10 @@ export const navLinks = [
 
 export const terminalLogs = [
   "> INITIALIZING PORTFOLIO_v2.0...",
+  "> LOADING MODULE: product_design [OK]",
+  "> LOADING MODULE: mobile_dev [OK]",
   "> LOADING MODULE: frontend_dev [OK]",
   "> LOADING MODULE: ui_design [OK]",
-  "> LOADING MODULE: product_design [OK]",
   "> CONNECTING: huguesishema@gmail.com [OK]",
   "> STATUS: ALL SYSTEMS OPERATIONAL",
   "",
@@ -403,11 +415,11 @@ export const terminalLogs = [
 ];
 
 export const workCategories = [
-  "Software Development",
   "Product Design",
-  "Graphic Design",
-  "Frontend Development",
   "Mobile Apps",
+  "Graphic Design", 
+  "Software Development",
+  "Frontend Development",
   "Backend Development",
   "Branding & Logos",
   "Art Works",
