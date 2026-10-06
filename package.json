@@ -1,38 +1,19 @@
 {
-  "name": "hugues-portfolio",
-  "version": "1.0.0",
+  "name": "portfoliov1",
   "private": true,
-  "engines": {
-    "node": "24.x"
-  },
+  "version": "1.0.0",
+  "description": "Ishema Hugues portfolio: Next.js site (web/) + Sanity Studio (studio/)",
+  "engines": { "node": ">=22.12" },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@react-three/drei": "^10.0.0",
-    "@react-three/fiber": "^9.0.0",
-    "animejs": "^4.0.0",
-    "framer-motion": "^12.0.0",
-    "gsap": "^3.12.0",
-    "lucide-react": "^0.475.0",
-    "next": "^15.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "three": "^0.173.0"
+    "dev": "concurrently -n web,studio -c cyan,magenta \"npm run dev --prefix web\" \"npm run dev --prefix studio\"",
+    "dev:web": "npm run dev --prefix web",
+    "dev:studio": "npm run dev --prefix studio",
+    "build": "npm run build --prefix web",
+    "typegen": "npm run typegen --prefix studio",
+    "seed": "npm run seed --prefix studio",
+    "install:all": "npm install --prefix web && npm install --prefix studio"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
-    "@types/node": "^22.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "@types/three": "^0.173.0",
-    "eslint": "^9.0.0",
-    "eslint-config-next": "^15.2.0",
-    "tailwindcss": "^4.0.0",
-    "typescript": "^5.0.0"
+    "concurrently": "^9.2.1"
   }
 }

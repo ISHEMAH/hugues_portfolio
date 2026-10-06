@@ -1,0 +1,37 @@
+{
+  "name": "portfoliov1-studio",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy",
+    "schema:deploy": "sanity schemas deploy",
+    "typegen": "sanity schemas extract --force && sanity typegen generate",
+    "seed": "sanity exec scripts/seed.ts --with-user-token"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/icons": "^5.2.2",
+    "@sanity/vision": "^6.16.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sanity": "^6.16.0",
+    "server-only": "^0.0.1",
+    "styled-components": "^6.1.19"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "@types/react": "^19.2.0",
+    "typescript": "^5.9.0"
+  }
+}
